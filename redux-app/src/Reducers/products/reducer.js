@@ -4,6 +4,7 @@ const initialState = {
 };
 
 export function ProductsReducer(state = initialState, action) {
+
   switch (action.type) {
     case CONSTANTS.LOADING:
       return { ...state, loading: true };
@@ -22,6 +23,7 @@ export function ProductsReducer(state = initialState, action) {
         ...state,
         loading: false,
         data: state.data?.filter((product) => {
+          console.log(product);
           return product.id !== action.payload;
         }),
       };

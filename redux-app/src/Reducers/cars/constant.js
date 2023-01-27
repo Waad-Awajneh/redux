@@ -1,0 +1,4 @@
+export const DELETET="DELETET";
+export const FETCH_SUCCESST="FETCH_SUCCESST";
+export const FETCH_FAILEDT="FETCH_FAILEDT";
+export const LOADINGT="LOADINGT";
