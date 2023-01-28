@@ -4,15 +4,21 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
-import store from "./store/store";
+import store2 from "./store/store2";
 import Test from "./Test";
+import App2 from "./App2";
+import UseMemoTest from "./useMemoTest";
+import CallBackTest from "./useCallBackTest";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
-  <Provider store={store}>
+  <Provider store={store2}>
     {/* <App /> */}
-    <Test/>
+    {/* <Test/> */}
+    {/* <App2 /> */}
+    {/* <UseMemoTest /> */}
+    <CallBackTest />
   </Provider>
   // </React.StrictMode>
 );
