@@ -14,7 +14,7 @@ function App() {
   const handelDelete = () => {
     dispatch(deleteProduct(1));
   };
-
+ 
   return (
     <>
       {" "}

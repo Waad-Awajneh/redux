@@ -4,21 +4,21 @@ import Todos from "./Todos";
 
 function CallBackTest() {
   const [count, setCount] = useState(0);
-  const [todos, setTodos] = useState([]);
+  const [todo, setTodo] = useState([]);
 
   const increment = () => {
     setCount((c) => c + 1);
   };
-  //   const addTodo = useCallback(() => {
-  //     setTodos((t) => [...t, "New Todo"]);
-  //   }, [todos]);
+    const addTodo = useCallback(() => {
+      setTodo((t) => [...t, "New Todo"]);
+    }, [todo]);
 
-  const addTodo = () => {
-    setTodos((t) => [...t, "newTodo"]);
-  };
+  // const addTodo = () => {
+  //   setTodo((t) => [...t, "newTodo"]);
+  // };
   return (
     <>
-      <Todos todos={todos} addTodo={addTodo} />
+      <Todos todos={todo} addTodo={addTodo} />
       <hr />
       <div>
         Count: {count}

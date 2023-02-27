@@ -7,18 +7,21 @@ import { Provider } from "react-redux";
 import store2 from "./store/store2";
 import Test from "./Test";
 import App2 from "./App2";
+import UserApp from "./Apps/UserApp";
 import UseMemoTest from "./useMemoTest";
 import CallBackTest from "./useCallBackTest";
+import { store3 } from "./store/store3";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
-  <Provider store={store2}>
+  <Provider store={store3}>
     {/* <App /> */}
     {/* <Test/> */}
     {/* <App2 /> */}
     {/* <UseMemoTest /> */}
-    <CallBackTest />
+    {/* <CallBackTest /> */}
+<UserApp/>
   </Provider>
   // </React.StrictMode>
 );

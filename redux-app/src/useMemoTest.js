@@ -6,7 +6,7 @@ function useMemoTest() {
   const [todos, setTodos] = useState([]);
 
   const calculation = useMemo(() => expensiveCalculation(count), [count]);
-  //   const calculation = expensiveCalculation(count);
+    // const calculation = expensiveCalculation(count);
   const increment = () => {
     setCount((c) => c + 1);
   };
